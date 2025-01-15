@@ -13,17 +13,26 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
-    </div>
+    <script>
+      let Pronombre = ["La", "El", "Su", "Tu"];
+      let Sustantivo = ["gallina", "león", "vaca", "planta"];
+      let Adjetivo = ["loco/a", "luchon/a", "feliz", "curioso/a"];
+
+      for (let i = 0; i < Pronombre.length; i++) {
+        for (let k = 0; k < Sustantivo.length; k++) {
+          for (let j = 0; j < Adjetivo.length; j++) {
+            document.write(
+              Pronombre[i] +
+                " " +
+                Sustantivo[k] +
+                " " +
+                Adjetivo[j] +
+                ".es" +
+                "<br>"
+            );
+          }
+        }
+      }
+    </script>
   </body>
 </html>
